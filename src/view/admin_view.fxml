@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+<BorderPane fx:id="mainBorderPane" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.AdminViewCX">
+    <top>
+        <VBox alignment="TOP_CENTER" spacing="10">
+            <Label text="Logged In"
+                   BorderPane.alignment="CENTER" textFill="darkgreen">
+                <font>
+                    <Font name="Times New Roman bold" size="40"/>
+                </font>
+                <padding>
+                    <Insets top="40"/>
+                </padding>
+            </Label>
+        </VBox>
+
+    </top>
+    <left>
+        <Label text="                               "/>
+    </left>
+
+    <right>
+        <Label text="                               "/>
+    </right>
+
+    <center>
+        <HBox>
+            <VBox  alignment="CENTER" prefHeight="400" prefWidth="400" spacing="20">
+                <Label text="Create Resources"
+                       BorderPane.alignment="CENTER">
+                    <font>
+                        <Font name="Times New Roman bold" size="20"/>
+                    </font>
+                    <padding>
+                        <Insets top="20"/>
+                    </padding>
+                </Label>
+                <Button fx:id="putCourse" text="Enter Course"
+                         prefWidth="150" prefHeight="50" onAction="#admin_view"/>
+                <Button fx:id="putInstructor" text="Enter Instructor"
+                         prefWidth="150" prefHeight="50" onAction="#admin_view"/>
+                <Button fx:id="putLeafStudent" text="Enter Student"
+                         prefWidth="150" prefHeight="50" onAction="#admin_view"/>
+                <Button fx:id="putRoom" text="Enter Room"
+                        prefWidth="150" prefHeight="50" onAction="#admin_view"/>
+                <Button fx:id="putSection" text="Enter New Section"
+                         prefWidth="150" prefHeight="50" onAction="#admin_view"/>
+                <Button fx:id="putTimeSlot" text="Enter Time Slot"
+                         prefWidth="150" prefHeight="50" onAction="#admin_view"/>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="400" prefWidth="400" spacing="20">
+                <Label text="Schedule Resources"
+                       BorderPane.alignment="CENTER">
+                    <font>
+                        <Font name="Times New Roman bold" size="20"/>
+                    </font>
+                    <padding>
+                        <Insets top="20"/>
+                    </padding>
+                </Label>
+                <Button fx:id="generateSchedule" text="Generate Schedule"
+                         prefWidth="200" prefHeight="50" onAction="#admin_view"/>
+            </VBox>
+        </HBox>
+    </center>
+    <bottom>
+        <HBox spacing="10" alignment="BOTTOM_RIGHT">
+            <padding>
+                <Insets  bottom="20" right="20"/>
+            </padding>
+            <Button fx:id="logoutButton" text="logout"
+                    textFill="blue" prefWidth="100" onAction="#admin_view"/>
+            <padding>
+                <Insets bottom="20" right="20"/>
+            </padding>
+        </HBox>
+    </bottom>
+
+</BorderPane>

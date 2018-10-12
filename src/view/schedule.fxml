@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.ScheduleCX"
+            prefHeight="400.0" prefWidth="600.0">
+<top>
+    <Label text="Schedule"
+           BorderPane.alignment="CENTER" textFill="darkgreen">
+        <font>
+            <Font name="Times New Roman bold" size="20"/>
+        </font>
+        <padding>
+            <Insets top="40"/>
+        </padding>
+    </Label>
+
+</top>
+    <center>
+        <GridPane vgap="20" hgap="0" gridLinesVisible="true" alignment="CENTER">
+            <Label text="Time Slot " GridPane.rowIndex="0" GridPane.columnIndex="0" alignment="BASELINE_CENTER"/>
+
+            <TextArea text="9:00-10:00" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextArea text="10:00-11:00" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextArea text="11:00-12:00" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <TextArea text="12:00-13:00" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <TextArea text="13:00-14:00" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            <TextArea text="13:00-15:00" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+            <TextArea text="15:00-16:00" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+            <TextArea text="16:00-17:00" GridPane.rowIndex="8" GridPane.columnIndex="0"/>
+
+
+            <Label text="Monday" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+
+            <TextArea fx:id="Mon_09_10" GridPane.rowIndex="1" GridPane.columnIndex="1"></TextArea>
+            <TextArea fx:id="Mon_10_11" GridPane.rowIndex="2" GridPane.columnIndex="1"></TextArea>
+            <TextArea fx:id="Mon_11_12" GridPane.rowIndex="3" GridPane.columnIndex="1"></TextArea>
+            <TextArea fx:id="Mon_12_13" GridPane.rowIndex="4" GridPane.columnIndex="1"></TextArea>
+            <TextArea fx:id="Mon_13_14" GridPane.rowIndex="5" GridPane.columnIndex="1"></TextArea>
+            <TextArea fx:id="Mon_14_15" GridPane.rowIndex="6" GridPane.columnIndex="1"></TextArea>
+            <TextArea fx:id="Mon_15_16" GridPane.rowIndex="7" GridPane.columnIndex="1"></TextArea>
+            <TextArea fx:id="Mon_16_17" GridPane.rowIndex="8" GridPane.columnIndex="1"></TextArea>
+
+
+
+            <Label text="Tueday" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+
+            <TextArea fx:id="Tue_09_10" GridPane.rowIndex="1" GridPane.columnIndex="2"></TextArea>
+            <TextArea fx:id="Tue_10_11" GridPane.rowIndex="2" GridPane.columnIndex="2"></TextArea>
+            <TextArea fx:id="Tue_11_12" GridPane.rowIndex="3" GridPane.columnIndex="2"></TextArea>
+            <TextArea fx:id="Tue_12_13" GridPane.rowIndex="4" GridPane.columnIndex="2"></TextArea>
+            <TextArea fx:id="Tue_13_14" GridPane.rowIndex="5" GridPane.columnIndex="2"></TextArea>
+            <TextArea fx:id="Tue_14_15" GridPane.rowIndex="6" GridPane.columnIndex="2"></TextArea>
+            <TextArea fx:id="Tue_15_16" GridPane.rowIndex="7" GridPane.columnIndex="2"></TextArea>
+            <TextArea fx:id="Tue_16_17" GridPane.rowIndex="8" GridPane.columnIndex="2"></TextArea>
+
+
+            <Label text="Wednesday" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+
+            <TextArea fx:id="Wed_09_10" GridPane.rowIndex="1" GridPane.columnIndex="3"></TextArea>
+            <TextArea fx:id="Wed_10_11" GridPane.rowIndex="2" GridPane.columnIndex="3"></TextArea>
+            <TextArea fx:id="Wed_11_12" GridPane.rowIndex="3" GridPane.columnIndex="3"></TextArea>
+            <TextArea fx:id="Wed_12_13" GridPane.rowIndex="4" GridPane.columnIndex="3"></TextArea>
+            <TextArea fx:id="Wed_13_14" GridPane.rowIndex="5" GridPane.columnIndex="3"></TextArea>
+            <TextArea fx:id="Wed_14_15" GridPane.rowIndex="6" GridPane.columnIndex="3"></TextArea>
+            <TextArea fx:id="Wed_15_16" GridPane.rowIndex="7" GridPane.columnIndex="3"></TextArea>
+            <TextArea fx:id="Wed_16_17" GridPane.rowIndex="8" GridPane.columnIndex="3"></TextArea>
+
+
+            <Label text="Thursday" GridPane.rowIndex="0" GridPane.columnIndex="4"/>
+
+            <TextArea fx:id="Thu_09_10" GridPane.rowIndex="1" GridPane.columnIndex="4"></TextArea>
+            <TextArea fx:id="Thu_10_11" GridPane.rowIndex="2" GridPane.columnIndex="4"></TextArea>
+            <TextArea fx:id="Thu_11_12" GridPane.rowIndex="3" GridPane.columnIndex="4"></TextArea>
+            <TextArea fx:id="Thu_12_13" GridPane.rowIndex="4" GridPane.columnIndex="4"></TextArea>
+            <TextArea fx:id="Thu_13_14" GridPane.rowIndex="5" GridPane.columnIndex="4"></TextArea>
+            <TextArea fx:id="Thu_14_15" GridPane.rowIndex="6" GridPane.columnIndex="4"></TextArea>
+            <TextArea fx:id="Thu_15_16" GridPane.rowIndex="7" GridPane.columnIndex="4"></TextArea>
+            <TextArea fx:id="Thu_16_17" GridPane.rowIndex="8" GridPane.columnIndex="4"></TextArea>
+
+
+            <Label text="Friday" GridPane.rowIndex="0" GridPane.columnIndex="5"/>
+
+            <TextArea fx:id="Fri_09_10" GridPane.rowIndex="1" GridPane.columnIndex="5"></TextArea>
+            <TextArea fx:id="Fri_10_11" GridPane.rowIndex="2" GridPane.columnIndex="5"></TextArea>
+            <TextArea fx:id="Fri_11_12" GridPane.rowIndex="3" GridPane.columnIndex="5"></TextArea>
+            <TextArea fx:id="Fri_12_13" GridPane.rowIndex="4" GridPane.columnIndex="5"></TextArea>
+            <TextArea fx:id="Fri_13_14" GridPane.rowIndex="5" GridPane.columnIndex="5"></TextArea>
+            <TextArea fx:id="Fri_14_15" GridPane.rowIndex="6" GridPane.columnIndex="5"></TextArea>
+            <TextArea fx:id="Fri_15_16" GridPane.rowIndex="7" GridPane.columnIndex="5"></TextArea>
+            <TextArea fx:id="Fri_16_17" GridPane.rowIndex="8" GridPane.columnIndex="5"></TextArea>
+        </GridPane>
+    </center>
+    <right>
+        <Label text="                                      " />
+    </right>
+    <left>
+        <Label text="                                      " />
+    </left>
+<bottom>
+    <HBox spacing="10" alignment="BOTTOM_CENTER">
+        <padding>
+            <Insets top="50" bottom="20" right="20"/>
+        </padding>
+        <Button fx:id="Show" text="Show" GridPane.rowIndex="10" GridPane.columnIndex="0"
+                textFill="black" prefWidth="100" onAction="#showSchedule"/>
+        <Button fx:id="Cancel" text="Cancel" GridPane.rowIndex="10" GridPane.columnIndex="0"
+                textFill="black" prefWidth="100" onAction="#showSchedule"/>
+        <padding>
+            <Insets bottom="20" right="20"/>
+        </padding>
+    </HBox>
+
+</bottom>
+</BorderPane>

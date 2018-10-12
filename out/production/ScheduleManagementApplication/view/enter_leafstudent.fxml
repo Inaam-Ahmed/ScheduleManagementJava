@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+<?import javafx.collections.FXCollections?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.LeafStudentCX"
+            prefHeight="400.0" prefWidth="600.0">
+    <top>
+        <Label text="Enter Student Record"
+               BorderPane.alignment="CENTER" textFill="darkgreen">
+            <font>
+                <Font name="Times New Roman bold" size="40"/>
+            </font>
+            <padding>
+                <Insets top="40"/>
+            </padding>
+        </Label>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" prefHeight="100" prefWidth="100" spacing="8" >
+            <HBox spacing="30">
+                <Label text="Name     :" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font name="Times New Roman bold" size="16"/>
+                    </font>
+                </Label>
+                <TextField fx:id="studentName" promptText="Student Name" />
+            </HBox>
+
+            <HBox spacing="30">
+                <Label text="Number:" BorderPane.alignment="CENTER" >
+                    <font>
+                        <Font name="Times New Roman bold" size="16"/>
+                    </font>
+                </Label>
+                <TextField fx:id="studentNumber" promptText="Student Number" />
+            </HBox>
+           <HBox spacing="30">
+               <Label text="Section:  " BorderPane.alignment="CENTER">
+                   <font>
+                       <Font name="Times New Roman bold" size="16"/>
+                   </font>
+               </Label>
+               <ComboBox fx:id="studentSection">
+                   <items>
+                       <FXCollections fx:factory="observableArrayList">
+                           <String  fx:value="No Section Created"/>
+                       </FXCollections>
+                   </items>
+               </ComboBox>
+           </HBox>
+
+        </VBox>
+    </center>
+
+
+    <bottom>
+        <HBox spacing="10" alignment="BOTTOM_RIGHT">
+            <padding>
+                <Insets  bottom="20" right="20"/>
+            </padding>
+            <Button fx:id="submitButton" text="Submit" GridPane.rowIndex="10" GridPane.columnIndex="0"
+                    textFill="green" prefWidth="100" onAction="#enter_leafstudent" />
+            <Button fx:id="cancelButton" text="Cancel" GridPane.rowIndex="10" GridPane.columnIndex="0"
+                    textFill="black" prefWidth="100" onAction="#enter_leafstudent"/>
+            <padding>
+                <Insets bottom="20" right="20"/>
+            </padding>
+        </HBox>
+    </bottom>
+    <right>
+        <Label text="                                                                    "/>
+
+    </right>
+
+
+    <left>
+        <Label text="                                                                     "/>
+    </left>
+
+
+</BorderPane>

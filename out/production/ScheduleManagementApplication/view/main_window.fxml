@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.MainWindowController">
+
+    <top>
+        <Label text="Schedule Management System"
+        BorderPane.alignment="CENTER" textFill="darkgreen">
+            <font>
+                <Font name="Times New Roman bold" size="40"/>
+            </font>
+            <padding>
+                <Insets top="40"/>
+            </padding>
+        </Label>
+
+    </top>
+    <left>
+        <!--<Label text="This is label at right"/>-->
+    </left>
+
+    <right>
+        <!--<Label text="This is right Label"/>-->
+    </right>
+
+    <center>
+        <VBox alignment="CENTER" prefHeight="400" prefWidth="400" spacing="20" >
+            <Button fx:id="loginButton" text="Login" GridPane.rowIndex="0" GridPane.columnIndex="0"
+                    textFill="green" prefWidth="100" prefHeight="50" onAction="#main_window"/>
+            <Button fx:id="registerButton" text="Register" GridPane.rowIndex="5" GridPane.columnIndex="0"
+                    textFill="blue" prefWidth="100" prefHeight="50" onAction="#main_window"/>
+        </VBox>
+    </center>
+
+    <bottom>
+    <HBox spacing="10" alignment="BOTTOM_RIGHT">
+        <padding>
+            <Insets  bottom="20" right="20"/>
+        </padding>
+        <Button fx:id="exitButton" text="Exit" GridPane.rowIndex="10" GridPane.columnIndex="0"
+                textFill="red" prefWidth="100" onAction="#main_window"/>
+        <padding>
+            <Insets bottom="20" right="20"/>
+        </padding>
+    </HBox>
+    </bottom>
+</BorderPane>

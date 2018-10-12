@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.CourseCX"
+            prefHeight="400.0" prefWidth="600.0">
+    <top>
+        <Label text="Enter Course Information"
+               BorderPane.alignment="CENTER" textFill="darkgreen">
+            <font>
+                <Font name="Times New Roman bold" size="40"/>
+            </font>
+            <padding>
+                <Insets top="40"/>
+            </padding>
+        </Label>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" prefHeight="100" prefWidth="5" spacing="20" >
+            <TextField fx:id="courseName" promptText="Course Name" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="courseCode" promptText="Course Code" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+            <HBox alignment="CENTER">
+                <Label text="Credit Hours:   " alignment="CENTER">
+                    <font>
+                        <Font name="Times New Roman bold" size="12"/>
+                    </font>
+                </Label>
+                <Spinner fx:id="creditHours" initialValue="1" min="1" max="4"/>
+            </HBox>
+            <ToggleButton fx:id="isLabCourse" text="Include Lab"/>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox spacing="10" alignment="BOTTOM_RIGHT">
+            <padding>
+                <Insets  bottom="20" right="20"/>
+            </padding>
+            <Button fx:id="submitButton" text="Submit" GridPane.rowIndex="10" GridPane.columnIndex="0"
+                    textFill="green" prefWidth="100" onAction="#enter_course" />
+            <Button fx:id="cancelButton" text="Cancel" GridPane.rowIndex="10" GridPane.columnIndex="0"
+                    textFill="black" prefWidth="100" onAction="#enter_course"/>
+            <padding>
+                <Insets bottom="20" right="20"/>
+            </padding>
+        </HBox>
+    </bottom>
+    <right>
+        <Label text="                                                                        "/>
+
+    </right>
+
+
+    <left>
+        <Label text="                                                                        "/>
+    </left>
+
+
+</BorderPane>
